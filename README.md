@@ -17,13 +17,15 @@
 　Simutransの基本的な操作方法(道路の引き方、消し方)、アドオンの導入の仕方は既知とします。
 
 
+### Pak file
+　128standard版は128standard/paksetに置いています。
+ 
+　128extended版は128extended/paksetに置いています。
+
+
 ### How to use
 　内包されています、How_to_use_Yokubari.pdf(作成中)を御覧ください。
-
-
-### Standards
-　命名規則、コストシートなどのSIS規格はProject SISを参考にしています。
-
+ 
 
 ### License
 　特記なき限り本リポジトリ内のpak及びdat, pngファイルは  
@@ -33,7 +35,10 @@
 コモンズ証：http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja  
 リーガルコード：http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode  
 
-　また、本paksetの中には製作者がKTOK以外に関係する方が居られます。引用する際は各パックセットの著者・編集者(copyright)をご確認の上、参照下さい。
+### Remark
+・本paksetの中には製作者がKTOK以外に関係する方が居られます。引用する際は各パックセットの著者・編集者(copyright)をご確認の上、参照下さい。
+
+・pak更新にて、前のデータが読み込めないということはないように配慮します。しかし、パックセットによっては、描画の変更があります。
 
 
 ### Refference
@@ -45,3 +50,4 @@ Project SIS (Ebi/Shirakami)
 ただし、How_to_use_Yokubari.pdfを読んでからでお願いいたします。
 場合によっては連絡できないことがありますのでご了承下さい。
 [@ano_KTOK_](https://twitter.com/ano_KTOK_)
+ 
