@@ -1,0 +1,3 @@
+#!/bin/bash
+./csv2dat_all.sh
+./makeobj_all.sh
