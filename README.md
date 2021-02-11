@@ -17,26 +17,26 @@
 
 ### Pak file
 　128standard版は128standard/paksetに置いています。（予定）
- 
+
 　128extended版は[128extended/pakset](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset)に置いています。
 
-  The pak files of pak128 standard is put in 128standard/pakset (Plan)
-  
-  The pak files of pak128 extended is put in [128extended/pakset](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset).
+　The pak files of pak128 standard is put in 128standard/pakset (Plan)
+
+　The pak files of pak128 extended is put in [128extended/pakset](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset).
 
 ### ja.tab, en.tab
 　128standard版は128standard/pakset/textに置いています。（予定）
- 
+
 　128extended版は[128extended/pakset/text](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset/text)に置いています。
- 
-  The en.tab of pak128 standard is put in 128standard/pakset/text (Plan)
-  
-  The en.tab of pak128 extended is put in [128extended/pakset/text](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset/text) .
+
+　The en.tab of pak128 standard is put in 128standard/pakset/text (Plan)
+
+　The en.tab of pak128 extended is put in [128extended/pakset/text](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset/text) .
 
 ### How to use
 　内包されています、[How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf) (作成中)を御覧ください。
- 
- Please read [How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf) in process of creation.
+
+　Please read [How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf) in process of creation.
 
 ### License
 　特記なき限り本リポジトリ内のpak及びdat, pngファイルは  
@@ -58,7 +58,10 @@ Project SIS (Ebi/Shirakami)
 
 ### contact
 万が一、製品に不具合がございましたら、ご連絡下さい。
-ただし、How_to_use_Yokubari.pdfを読んでからでお願いいたします。
+ただし、[How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf)を読んでからでお願いいたします。
 場合によっては連絡できないことがありますのでご了承下さい。
+
+If you have some questions and
+you read [How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf),
+please contact us.
 [@ano_KTOK_](https://twitter.com/ano_KTOK_)
- 
