@@ -1,0 +1,99 @@
+\documentclass[11pt,a4paper]{jsarticle}
+%\usepackage {okumacro}
+
+\usepackage{amsmath} % さまざまな数式を用いるための設定
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[dvipdfmx]{graphicx} % 図を取り込むための設定
+\usepackage[dvipdfmx]{pict2e}
+\usepackage[dvipdfmx]{hyperref}
+%\usepackage{pxjahyper}		%日本語設定
+\hypersetup{bookmarks=true}
+\hypersetup{bookmarksopen=true}
+%\usepackage{emath}
+\usepackage{amsfonts}%白抜きbold作成
+\usepackage{url}%urlの記述
+%\usepackage{makeidx} % 索引作成
+\usepackage{lscape} %landscaoeのときにpdfを反転する．
+%\usepackage{longtable}	%tableに改頁
+
+\usepackage[all,cmtip]{xy}
+
+\usepackage{tikz}%tikzを発動！
+\usepackage{tikz-cd}
+\usetikzlibrary{positioning}%
+%\usetikzlibrary{matrix}
+\usepackage[abbrev]{amsrefs}
+
+
+% ######## measure #########
+% # mm = 1mm = 2.85pt      #
+% # cm = 10mm = 28.5pt     #
+% # in = 25.4mm = 72.27pt  #
+% # pt = 0.35mm = 1pt      #
+% # em = width of [M]      #
+% # ex = height of [x]     #
+% # zw = width of [Kanji]  #
+% # zh = height of [Kanji] #
+% ##########################
+% ##################### Portrait Setting #########################
+% # TOP = 1inch + \voffset + \topmargin + \headheight + \headsep #
+% #     = 1inch + 0pt + 4pt + 20pt + 18pt (default)              #
+% # BOTTOM = \paperheight - TOP -\textheight                     #
+% ################################################################
+\setlength{\textheight}{\paperheight}   % 紙面縦幅を本文領域にする（BOTTOM=-TOP）
+\setlength{\topmargin}{4.6truemm}       % 上の余白を30mm（=1inch+4.6mm）に
+\addtolength{\topmargin}{-\headheight}  %
+\addtolength{\topmargin}{-\headsep}     % ヘッダの分だけ本文領域を移動させる
+\addtolength{\textheight}{-60truemm}    % 下の余白も30mm（BOTTOM=-TOPだから+TOP+30mm）
+% #################### Landscape Setting #######################
+% # LEFT = 1inch + \hoffset + \oddsidemargin (\evensidemargin) #
+% #      = 1inch + 0pt + 0pt                                   #
+% # RIGHT = \paperwidth - LEFT - \textwidth                    #
+% ##############################################################
+\setlength{\textwidth}{\paperwidth}     % 紙面横幅を本文領域にする（RIGHT=-LEFT）
+\setlength{\oddsidemargin}{-0.4truemm}  % 左の余白を25mm(=1inch-0.4mm)に
+\setlength{\evensidemargin}{-0.4truemm} %
+\addtolength{\textwidth}{-50truemm}     % 右の余白も25mm（RIGHT=-LEFT）
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%↑priamble
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{flushleft}
+
+  { \fontsize{24pt}{0pt}\selectfont
+    How to use Yokubari roads set
+  }
+	\\
+\vspace{3pt}
+	{ \fontsize{12pt}{0pt}\selectfont
+		Yokubari道路セットの取り扱い説明書
+	}
+	\\
+\vspace{15pt}
+	{ \fontsize{18pt}{0pt}\selectfont
+		Author: ano KTOK
+	}
+	\\
+\vspace{2pt}
+	{ \fontsize{12pt}{0pt}\selectfont
+		著者: あのKTOK
+	}
+	\\
+\vspace{15pt}
+	{ \fontsize{12pt}{0pt}\selectfont
+		Date: 2020/Feb./11
+	}
+\end{flushleft}
+
+\newpage
+
+\tableofcontents
+
+\section{hogehoge}
+
+
+\end{document}
