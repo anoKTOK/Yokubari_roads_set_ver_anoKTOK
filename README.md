@@ -60,6 +60,7 @@ Project SIS (Ebi/Shirakami)
 万が一、製品に不具合がございましたら、ご連絡下さい。
 ただし、[How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf)を読んでからでお願いいたします。
 場合によっては連絡できないことがありますのでご了承下さい。
+[@ano_KTOK_](https://twitter.com/ano_KTOK_)
 
 If you have some questions and
 you read [How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf),
