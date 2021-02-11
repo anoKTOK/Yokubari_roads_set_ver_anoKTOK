@@ -2,9 +2,6 @@
 
 (日本語)
 
-# *只今、編集中*
-
-
 ### Introduction
 　本プロジェクトは都市開発・輸送シミュレーションゲームであるSimutransにアドオンを追加することで、道路をメインにかつて無いリアリティーをもってインフラを再現することを目的とする。
 
@@ -16,16 +13,30 @@
 ### Previous knowledge
 　Simutransの基本的な操作方法(道路の引き方、消し方)、アドオンの導入の仕方は既知とします。
 
+ We assume that you can draw and erase roads about Simutrans, enough.  
 
 ### Pak file
-　128standard版は128standard/paksetに置いています。
+　128standard版は128standard/paksetに置いています。（予定）
  
-　128extended版は128extended/paksetに置いています。
+　128extended版は[128extended/pakset](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset)に置いています。
 
+  The pak files of pak128 standard is put in 128standard/pakset (Plan)
+  
+  The pak files of pak128 extended is put in [128extended/pakset](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset).
+
+### ja.tab, en.tab
+　128standard版は128standard/pakset/textに置いています。（予定）
+ 
+　128extended版は[128extended/pakset/text](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset/text)に置いています。
+ 
+  The en.tab of pak128 standard is put in 128standard/pakset/text (Plan)
+  
+  The en.tab of pak128 extended is put in [128extended/pakset/text](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset/text) .
 
 ### How to use
-　内包されています、How_to_use_Yokubari.pdf(作成中)を御覧ください。
+　内包されています、[How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf) (作成中)を御覧ください。
  
+ Please read [How_to_use_Yokubari.pdf](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/blob/main/How_to_use/How_to_use_Yokubari.pdf) in process of creation.
 
 ### License
 　特記なき限り本リポジトリ内のpak及びdat, pngファイルは  
