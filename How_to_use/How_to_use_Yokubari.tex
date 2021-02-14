@@ -1,29 +1,28 @@
-\documentclass[11pt,a4paper]{jsarticle}
+\documentclass{jarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
 %\usepackage {okumacro}
 
-\usepackage{amsmath} % さまざまな数式を用いるための設定
-\usepackage{amsthm}
-\usepackage{mathrsfs}
-\usepackage[dvipdfmx]{graphicx} % 図を取り込むための設定
-\usepackage[dvipdfmx]{pict2e}
+%\usepackage{amsmath} % さまざまな数式を用いるための設定
+%\usepackage{amsthm}
+%\usepackage{mathrsfs}
+%\usepackage[dvipdfmx]{pict2e}
 \usepackage[dvipdfmx]{hyperref}
-%\usepackage{pxjahyper}		%日本語設定
-\hypersetup{bookmarks=true}
-\hypersetup{bookmarksopen=true}
+\usepackage{pxjahyper}		%日本語設定
+%\hypersetup{bookmarks=true}
+%\hypersetup{bookmarksopen=true}
 %\usepackage{emath}
-\usepackage{amsfonts}%白抜きbold作成
-\usepackage{url}%urlの記述
+%\usepackage{amsfonts}%白抜きbold作成
+%\usepackage{url}%urlの記述
 %\usepackage{makeidx} % 索引作成
-\usepackage{lscape} %landscaoeのときにpdfを反転する．
+%\usepackage{lscape} %landscaoeのときにpdfを反転する．
 %\usepackage{longtable}	%tableに改頁
 
-\usepackage[all,cmtip]{xy}
-
-\usepackage{tikz}%tikzを発動！
-\usepackage{tikz-cd}
-\usetikzlibrary{positioning}%
+%\usepackage{tikz}%tikzを発動！
+%\usepackage{tikz-cd}
+%\usetikzlibrary{positioning}%
 %\usetikzlibrary{matrix}
-\usepackage[abbrev]{amsrefs}
+%\usepackage[abbrev]{amsrefs}
 
 
 % ######## measure #########
@@ -65,35 +64,104 @@
 \begin{flushleft}
 
   { \fontsize{24pt}{0pt}\selectfont
-    How to use Yokubari roads set
+    Yokubari道路セットの取り扱い説明書
   }
 	\\
 \vspace{3pt}
 	{ \fontsize{12pt}{0pt}\selectfont
-		Yokubari道路セットの取り扱い説明書
+		How to use Yokubari roads set
 	}
 	\\
 \vspace{15pt}
 	{ \fontsize{18pt}{0pt}\selectfont
-		Author: ano KTOK
+		著者: あのKTOK
 	}
 	\\
 \vspace{2pt}
 	{ \fontsize{12pt}{0pt}\selectfont
-		著者: あのKTOK
+		Author: ano KTOK
 	}
 	\\
 \vspace{15pt}
 	{ \fontsize{12pt}{0pt}\selectfont
-		Date: 2020/Feb./11
+		Date: 2020/Feb./14
 	}
 \end{flushleft}
 
+\vspace{15pt}
+\begin{flushleft}
+  \includegraphics[width = 15cm]{20210207app1.png}
+\end{flushleft}
+
+
 \newpage
 
+\renewcommand{\contentsname}{目次 / Index}
 \tableofcontents
 
-\section{hogehoge}
+\newpage
 
+\part{日本語版}
+
+\section{はじめに}
+本プロジェクトは都市開発・輸送シミュレーションゲームであるSimutransにアドオンを追加することで、道路をメインにかつて無いリアリティーをもってインフラを再現することを目的とする。
+
+これらアドオンは全て統一規格のもとに開発され、相互に組み合わせることで拡張性と景観表現の自由度を向上させる。
+この一種のモジュール構造ともいえるような実装方法をとった結果、景観表現力と引き換えに極端にユーザビリティを犠牲にせざるを得なかったため、万人に受け入れられるものではない。
+しかし、それでもなお、リアリティーを追求してやまないインフラに拘りを持つ同志に利用していただければこれ幸いである。
+
+\subsection*{前提知識}
+　Simutransの基本的な操作方法(道路の引き方、消し方)、アドオンの導入の仕方は既知とします。
+
+\subsection*{Pak file}
+　128standard版は128standard/paksetに置いています。（予定）
+
+　128extended版は\href{https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset}{128extended/pakset}に置いています。
+
+\subsection*{ja.tab, en.tab}
+128standard版は128standard/pakset/textに置いています。（予定）
+
+128extended版は\href{https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset/text}{128extended/pakset/text}に置いています。
+
+
+\subsection*{ライセンス}
+特記なき限り本リポジトリ内のpak及びdat, pngファイルは
+"クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス"
+によって許諾されています。ライセンスの内容を知りたい方はコモンズ証をご確認ください。
+
+コモンズ証：\href{http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja}{http://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja}
+
+リーガルコード：\href{http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode}{http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode}
+
+\subsection*{注意書き}
+
+\begin{description}
+  \item[(1)]
+    本paksetの中には製作者がKTOK以外に関係する方が居られます。引用する際は各パックセットの著者・編集者(copyright)をご確認の上、参照下さい。
+  \item[(2)]
+    pak更新にて、前のデータが読み込めないということはないように配慮します。しかし、パックセットによっては、描画の変更があります。
+\end{description}
+
+\subsection*{連絡}
+万が一、製品に不具合がございましたら、ご連絡下さい。 ただし、本説明書を読んでからでお願いいたします。 場合によっては連絡できないことがありますのでご了承下さい。
+
+\href{https://twitter.com/ano_KTOK_}{@ano\_KTOK\_}
+
+\newpage
+
+\section{使い方}
+
+
+\newpage
+
+\part{English version}
+
+\section{Introduction}
+
+The aim of this project is to add addons to Simutrans, an urban development and transportation simulation game, to recreate infrastructure with unprecedented realism, mainly roads.
+
+All of these addons are developed under a unified standard and can be combined with each other to improve scalability and flexibility of landscape expression.
+As a result of this kind of modular implementation, we had to sacrifice extreme usability in exchange for the ability to express the scenery, so it is not something that can be accepted by everyone.
+Nevertheless, we hope if it could be used by comrades who are concerned about infrastructure and who are still in pursuit of reality.
 
 \end{document}
