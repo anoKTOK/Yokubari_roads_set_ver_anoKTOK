@@ -1,4 +1,4 @@
-\documentclass{jarticle}
+\documentclass{jbook}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage[dvipdfmx]{color}
 %\usepackage {okumacro}
@@ -9,6 +9,7 @@
 %\usepackage[dvipdfmx]{pict2e}
 \usepackage[dvipdfmx]{hyperref}
 \usepackage{pxjahyper}		%日本語設定
+\usepackage{multicol}
 %\hypersetup{bookmarks=true}
 %\hypersetup{bookmarksopen=true}
 %\usepackage{emath}
@@ -55,11 +56,15 @@
 \setlength{\evensidemargin}{-0.4truemm} %
 \addtolength{\textwidth}{-50truemm}     % 右の余白も25mm（RIGHT=-LEFT）
 
+\setlength{\columnseprule}{.4pt}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %↑priamble
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
+\thispagestyle{empty}
 
 \begin{flushleft}
 
@@ -101,7 +106,7 @@
 
 \newpage
 
-\part{日本語版}
+\chapter{日本語版}
 
 \section{はじめに}
 本プロジェクトは都市開発・輸送シミュレーションゲームであるSimutransにアドオンを追加することで、道路をメインにかつて無いリアリティーをもってインフラを再現することを目的とする。
@@ -116,7 +121,7 @@
 \subsection*{Pak file}
 　128standard版は128standard/paksetに置いています。（予定）
 
-　128extended版は\href{https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset}{128extended/pakset}に置いています。
+　128extended版は\href{https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset}{128extended/pakset}に置いています。makeobjは2019年6月に更新されたものです。
 
 \subsection*{ja.tab, en.tab}
 128standard版は128standard/pakset/textに置いています。（予定）
@@ -228,13 +233,308 @@
 \newpage
 
 \section{組み合わせ}
+\subsection*{一覧}
 
 
+  \includegraphics[width = 135mm]{picture/20210214-road-1-9.png}
+
+  \ref{sub:IC_at_center}へ\\
+
+  \includegraphics[width = 75mm]{picture/20210214-road-2-8.png}
+
+  \ref{sub:1to1and1}へ\\
+
+  \includegraphics[width = 75mm]{picture/20210214-road-3-6.png}
+
+  \ref{sub:2lane_to_1lane+1lane}へ\\
+
+  \includegraphics[width = 75mm]{picture/20210214-road-4-6.png}
+
+  \ref{sub:1lane_to_2lane}へ\\
+
+  \includegraphics[width = 75mm]{picture/20210214-road-4-7.png}
+
+  \ref{sub:1lane_to_2lane}へ\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-5-5.png}
+
+  \ref{sub:1lane_to_2lane2}へ\\
+
+\newpage
+
+\subsection{道路の中央でIC}
+\label{sub:IC_at_center}
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-9.png}
+
+  \vspace{10pt}
+  \includegraphics[width = 135mm]{picture/20210214-road-1-1.png}
+
+
+  まず、道路を引きます。
+  2車線道路を2つ5マス以上引きます。
+  \\
+
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-2.png}
+
+
+  合流したいところで1車線道路でつなげて、伸ばしたい方向に1マス引きます。
+  \\
+
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-3.png}
+
+
+  さっき、伸ばしたところから、2車線道路を上書きして引きます。
+  \\
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-4.png}
+
+  市電/軽便鉄道ツールを開きます。
+  2車線の側壁(普通のもの)を合流部分から1マス以内のところを引きます。
+  \\
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-5.png}
+
+  伸ばしていない方向に、「本線2車線 - 補助1車線」アドオンを上書きします。
+  \\
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-6.png}
+
+  反対側も同じく上書きします。
+  \\
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-7.png}
+
+  「本線2車線 - 補助1車線 右側〇〇」を西から真ん中2マスに上書きします。
+  \\
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-8.png}
+
+  反対側も同じです。
+  \\
+
+  \includegraphics[width = 135mm]{picture/20210214-road-1-9.png}
+
+  最後に、2車線の[//]が付いている側壁アドオンで、中央から伸ばしたい方向に上書きすると完成です。
+
+\newpage
+
+\subsection{1車線から1車線+1車線の分岐}
+\label{sub:1to1and1}
+
+\includegraphics[width = 75mm]{picture/20210214-road-2-8.png}
+\begin{multicols}{2}
+
+
+
+
+\includegraphics[width = 75mm]{picture/20210214-road-2-1.png}
+
+道路ツールを開きます。
+1車線(狭い方)奥を5マスくらい引きます。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-2-2.png}
+
+「1車線 手前」の「//」が付いているアドオンでで、分岐させたいところから、分岐させる方向に$+1$マス上書きします。
+分岐させたい方向が違う場合は、「1車線 奥」の「//」が付いているアドオンで上書きします。\\
+
+「1車線」の「//」が付いているアドオンのT字路についてです。手前側に分岐させたものは「1車線 手前」、奥側に分岐させたものは「1車線 奥」で設定しています。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-2-3.png}
+
+「//」が付いているアドオンを使って分岐させた方向を伸ばします。
+
+「//」が付いているアドオンは角の斜めでは直線になります。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-2-4.png}
+
+市電/軽便鉄道ツールを開きます。
+奥側の道路は何も付いていない「1車線 奥」の側壁を引きます。\\
+
+\newpage
+
+\includegraphics[width = 75mm]{picture/20210214-road-2-5.png}
+
+分岐する、1マス手前のところを、「1車線 奥」の「//」が付いている側壁アドオンで上書きします。
+
+ここで、「1車線」の「//」が付いている側壁アドオンの行き止まりは、2車線から1車線で登録しています。
+1車線になるが奥なら「1車線 奥」、手前なら「1車線 手前」で設定しています。\\
+
+もし、南側に側壁を延伸する場合は、市電の鉄道をつなげないでください。画像が変わります。
+
+\includegraphics[width = 75mm]{picture/20210214-road-2-6.png}
+
+「1車線 手前」の「//」が付いている側壁アドオンでで、分岐させたいところから、分岐させる方向に$+1$マス上書きします。
+分岐させたい方向が違う場合は、「1車線 奥」の「//」が付いている側壁アドオンで上書きします。
+
+「1車線」の「//」が付いている側壁アドオンのT字路についてです。手前側に分岐させたものは「1車線 手前」、奥側に分岐させたものは「1車線 奥」で設定しています。\\
+
+%\includegraphics[width = 75mm]{picture/20210214-road-2-7.png}
+
+
+\includegraphics[width = 75mm]{picture/20210214-road-2-8.png}
+
+伸ばしたところを調節します。\\
+
+\end{multicols}
 
 
 \newpage
 
-\part{English version}
+\subsection{2車線から1車線と1車線へ分岐}
+\label{sub:2lane_to_1lane+1lane}
+
+\includegraphics[width = 75mm]{picture/20210214-road-3-6.png}
+\vspace{10pt}
+
+\begin{multicols}{2}
+
+
+\includegraphics[width = 75mm]{picture/20210214-road-3-1.png}
+
+道路ツールを開きます。
+1車線 奥 幅広路肩のアドオンを6マスくらい引きます。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-3-2.png}
+
+「1車線 手前 幅広路肩」の「//」が付いているアドオンでで、分岐させたいところから、分岐させる方向に$+1$マス上書きします。
+分岐させたい方向が違う場合は、「1車線 奥 幅広路肩」の「//」が付いているアドオンで上書きします。
+
+「1車線」の「//」が付いているアドオンのT字路についてです。手前側に分岐させたものは「1車線 手前 幅広路肩」、奥側に分岐させたものは「1車線 奥 幅広路肩」で設定しています。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-3-3.png}
+
+「//」が付いているアドオンを使って分岐させた方向を伸ばします。
+
+「//」が付いているアドオンは角の斜めでは直線になります。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-3-4.png}
+
+2車線道路をデコります。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-3-5.png}
+
+市電/軽便鉄道ツールを開きます。
+2車線側壁の何も付いていないアドオンを道路全体に引きます。
+
+\includegraphics[width = 75mm]{picture/20210214-road-3-6.png}
+
+角の部分を2車線側壁の「//」が付いているアドオンで上書きします。
+
+\end{multicols}
+
+\newpage
+
+
+\subsection{1車線から2車線へ}
+\label{sub:1lane_to_2lane}
+
+\begin{multicols}{2}
+  \includegraphics[width = 75mm]{picture/20210214-road-4-6.png}
+
+  \includegraphics[width = 75mm]{picture/20210214-road-4-7.png}
+\end{multicols}
+
+\vspace{10pt}
+
+\begin{multicols}{2}
+\includegraphics[width = 75mm]{picture/20210214-road-4-1.png}
+
+道路ツールを開きます。
+1車線 奥 幅広路肩の道路を6マスくらい引きます。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-4-2.png}
+
+車線幅を変更する1マス後のところに2車線道路を上書きします。\\
+
+
+\includegraphics[width = 75mm]{picture/20210214-road-4-3.png}
+
+市電/軽便鉄道ツールを開きます。
+車線幅を変更するマスに、「本線2車線 - 補助1車線 右側〇〇」アドオンを引きます。
+
+SISのオリジナルでは側壁が付いていないですが、側壁を付けてみました。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-4-4.png}
+
+車線幅を変更する1マス後のところに2車線の側壁アドオンを上書きします。\\
+
+
+\includegraphics[width = 75mm]{picture/20210214-road-4-6.png}
+
+車線幅を変更する1マス前から南に2車線側壁のアドオンを引きます。
+車線幅を変更するマスとはくっつけない場合はこうなります。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-4-7.png}
+
+つなげるとこうなります。
+
+\end{multicols}
+
+\newpage
+
+\subsection{1車線から2車線へ2}
+\label{sub:1lane_to_2lane2}
+
+\includegraphics[width = 75mm]{picture/20210214-road-5-5.png}
+
+\vspace{10pt}
+
+\begin{multicols}{2}
+
+\includegraphics[width = 75mm]{picture/20210214-road-5-1.png}
+
+道路ツールを開きます。
+1車線 奥の道路を6マスくらい引きます。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-5-2.png}
+
+車線幅を変更する1マス後のところに2車線道路を上書きします。\\
+
+\includegraphics[width = 75mm]{picture/20210214-road-5-3.png}
+
+市電/軽便鉄道ツールを開きます。
+車線幅を変更するマスに、「1車線 奥」の「//」が付いている側壁アドオンを引きます。
+
+\includegraphics[width = 75mm]{picture/20210214-road-5-4.png}
+
+車線幅を変更する1マス後のところに2車線の側壁アドオンを上書きします。
+
+\includegraphics[width = 75mm]{picture/20210214-road-5-5.png}
+
+車線幅を変更するマスより前から南へ1車線の側壁アドオンを引きます。
+このとき、車線幅を変更するマスと接続しないように注意します。
+
+\end{multicols}
+
+\newpage
+
+\section{編集後記}
+
+扱いに慣れるための有効だと思われる練習方法として以下をあげます。
+\begin{itemize}
+  \item
+  $8$マスの四角を引いて、各辺の中心から四角形の外側に向かって$1$マス引いて見比べる。
+  \item
+  手前か奥かわからなければ、とりあえず思う方を引いておいて、違ったら別の方で上書きすると覚える量が減る。
+  \item
+  引きまくって慣れる。そのために、引かざるを得ない環境に置く。
+  例えば、高速道路縛りで高速道路やIC、JTCをたくさん引く必要にかられるようにするのはありかもしれません。
+  \item
+  モチベーションを保つ。
+  おそらく、Yokubari道路アドオンを使いたい人は、リアリティーのある道路を引きたい、見たいがコアにあるとあります。
+\end{itemize}
+残念ながらいくら頑張っても慣れない場合は、現状としてスクリプトを書いてくれる人を待つしか無いようです。
+
+\vspace{15pt}
+このアドオン群ですら足りないと思った方々は、すばらしい。その熱意をアドオン制作に注ぎ込むことを強く推奨します。
+そして、公開して頂くと喜びに満ち溢れることでしょう。
+
+\newpage
+
+\chapter{English version}
 
 \section{Introduction}
 
@@ -243,5 +543,7 @@ The aim of this project is to add addons to Simutrans, an urban development and 
 All of these addons are developed under a unified standard and can be combined with each other to improve scalability and flexibility of landscape expression.
 As a result of this kind of modular implementation, we had to sacrifice extreme usability in exchange for the ability to express the scenery, so it is not something that can be accepted by everyone.
 Nevertheless, we hope if it could be used by comrades who are concerned about infrastructure and who are still in pursuit of reality.
+
+bla, bla, bla...
 
 \end{document}
