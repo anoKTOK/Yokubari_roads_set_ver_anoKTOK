@@ -1,4 +1,4 @@
-\documentclass{jbook}
+\documentclass{jarticle}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage[dvipdfmx]{color}
 %\usepackage {okumacro}
@@ -106,9 +106,9 @@
 
 \newpage
 
-\chapter{日本語版}
+\section{日本語版}
 
-\section{はじめに}
+\subsection{はじめに}
 本プロジェクトは都市開発・輸送シミュレーションゲームであるSimutransにアドオンを追加することで、道路をメインにかつて無いリアリティーをもってインフラを再現することを目的とする。
 
 これらアドオンは全て統一規格のもとに開発され、相互に組み合わせることで拡張性と景観表現の自由度を向上させる。
@@ -154,11 +154,11 @@
 
 \newpage
 
-\section{アドオン一覧}
+\subsection{アドオン一覧}
 
 
 
-\subsubsection*{道路ツール / Road Tools}
+\subsubsection{道路ツール / Road Tools}
 
 \begin{flushleft}
   \includegraphics{picture/menu-1-1.png}
@@ -200,7 +200,7 @@
 
 \newpage
 
-\subsubsection*{市電/軽便鉄道ツール / Trams/light rail Tools}
+\subsubsection{市電/軽便鉄道ツール / Trams/light rail Tools}
 \begin{flushleft}
   \includegraphics{picture/menu-2-1.png}
 \end{flushleft}
@@ -234,13 +234,15 @@
 
 \newpage
 
-\section{組み合わせ}
+\subsection{組み合わせ}
 \subsection*{一覧}
 
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-9.png}
 
   \ref{sub:IC_at_center}へ\\
+
+\begin{multicols}{2}
 
   \includegraphics[width = 75mm]{picture/20210214-road-2-8.png}
 
@@ -258,139 +260,132 @@
 
   \ref{sub:1lane_to_2lane}へ\\
 
-\includegraphics[width = 75mm]{picture/20210214-road-5-5.png}
+  \includegraphics[width = 75mm]{picture/20210214-road-5-5.png}
 
-  \ref{sub:1lane_to_2lane2}へ\\
+  \ref{sub:1lane_to_2lane2}へ
+\end{multicols}
 
 \newpage
 
-\subsection{道路の中央でIC}
+\subsubsection{道路の中央でIC}
 \label{sub:IC_at_center}
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-9.png}
 
   \vspace{10pt}
 
-  (1)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-1.png}
 
-
+  (1)
   まず、道路を引きます。
   2車線道路を2つ5マス以上引きます。
   \\
 
-  (2)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-2.png}
 
-
+  (2)
   合流したいところで1車線道路でつなげて、伸ばしたい方向に1マス引きます。
   \\
 
-\newpage
-  (3)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-3.png}
 
-
+  (3)
   さっき、伸ばしたところから、2車線道路を上書きして引きます。
   \\
 
 
-  (3)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-4.png}
 
+  (3)
   市電/軽便鉄道ツールを開きます。
   2車線の側壁(普通のもの)を合流部分から1マス以内のところを引きます。
   \\
 
-  (4)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-5.png}
 
+  (4)
   伸ばしていない方向に、「本線2車線 - 補助1車線」アドオンを上書きします。
   \\
 
-\newpage
-  (5)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-6.png}
 
+  (5)
   反対側も同じく上書きします。
   \\
 
-  (6)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-7.png}
 
+  (6)
   「本線2車線 - 補助1車線 右側〇〇」を西から真ん中2マスに上書きします。
   \\
 
-  (7)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-8.png}
 
+  (7)
   反対側も同じです。
   \\
 
-\newpage
-  (8)
 
   \includegraphics[width = 135mm]{picture/20210214-road-1-9.png}
 
+  (8)
   最後に、2車線の[//]が付いている側壁アドオンで、中央から伸ばしたい方向に上書きすると完成です。
 
 \newpage
 
-\subsection{1車線から1車線+1車線の分岐}
+\subsubsection{1車線から1車線+1車線の分岐}
 \label{sub:1to1and1}
 
 \includegraphics[width = 75mm]{picture/20210214-road-2-8.png}
 \begin{multicols}{2}
 
 
-  (1)
 
 \includegraphics[width = 75mm]{picture/20210214-road-2-1.png}
 
+(1)
 道路ツールを開きます。
 1車線(狭い方)奥を5マスくらい引きます。\\
 
 
-(2)
 
 \includegraphics[width = 75mm]{picture/20210214-road-2-2.png}
 
+(2)
 「1車線 手前」の「//」が付いているアドオンでで、分岐させたいところから、分岐させる方向に$+1$マス上書きします。
 分岐させたい方向が違う場合は、「1車線 奥」の「//」が付いているアドオンで上書きします。\\
 
 「1車線」の「//」が付いているアドオンのT字路についてです。手前側に分岐させたものは「1車線 手前」、奥側に分岐させたものは「1車線 奥」で設定しています。\\
 
-(3)
 
 
 \includegraphics[width = 75mm]{picture/20210214-road-2-3.png}
 
+(3)
 「//」が付いているアドオンを使って分岐させた方向を伸ばします。
 
 「//」が付いているアドオンは角の斜めでは直線になります。\\
 
 
-(4)
 
 \includegraphics[width = 75mm]{picture/20210214-road-2-4.png}
 
+(4)
 市電/軽便鉄道ツールを開きます。
 奥側の道路は何も付いていない「1車線 奥」の側壁を引きます。\\
 
-\newpage
-
-(5)
 
 \includegraphics[width = 75mm]{picture/20210214-road-2-5.png}
 
+(5)
 分岐する、1マス手前のところを、「1車線 奥」の「//」が付いている側壁アドオンで上書きします。
 
 ここで、「1車線」の「//」が付いている側壁アドオンの行き止まりは、2車線から1車線で登録しています。
@@ -398,10 +393,10 @@
 
 もし、南側に側壁を延伸する場合は、市電の鉄道をつなげないでください。画像が変わります。
 
-(6)
 
 \includegraphics[width = 75mm]{picture/20210214-road-2-6.png}
 
+(6)
 「1車線 手前」の「//」が付いている側壁アドオンでで、分岐させたいところから、分岐させる方向に$+1$マス上書きします。
 分岐させたい方向が違う場合は、「1車線 奥」の「//」が付いている側壁アドオンで上書きします。
 
@@ -409,10 +404,10 @@
 
 %\includegraphics[width = 75mm]{picture/20210214-road-2-7.png}
 
-(7)
 
 \includegraphics[width = 75mm]{picture/20210214-road-2-8.png}
 
+(7)
 伸ばしたところを調節します。\\
 
 \end{multicols}
@@ -420,7 +415,7 @@
 
 \newpage
 
-\subsection{2車線から1車線と1車線へ分岐}
+\subsubsection{2車線から1車線と1車線へ分岐}
 \label{sub:2lane_to_1lane+1lane}
 
 \includegraphics[width = 75mm]{picture/20210214-road-3-6.png}
@@ -428,50 +423,49 @@
 
 \begin{multicols}{2}
 
-  (1)
 
 \includegraphics[width = 75mm]{picture/20210214-road-3-1.png}
 
+(1)
 道路ツールを開きます。
 1車線 奥 幅広路肩のアドオンを6マスくらい引きます。\\
 
-(2)
 
 \includegraphics[width = 75mm]{picture/20210214-road-3-2.png}
 
+(2)
 「1車線 手前 幅広路肩」の「//」が付いているアドオンでで、分岐させたいところから、分岐させる方向に$+1$マス上書きします。
 分岐させたい方向が違う場合は、「1車線 奥 幅広路肩」の「//」が付いているアドオンで上書きします。
 
 「1車線」の「//」が付いているアドオンのT字路についてです。手前側に分岐させたものは「1車線 手前 幅広路肩」、奥側に分岐させたものは「1車線 奥 幅広路肩」で設定しています。\\
 
-(3)
 
 \includegraphics[width = 75mm]{picture/20210214-road-3-3.png}
 
+(3)
 「//」が付いているアドオンを使って分岐させた方向を伸ばします。
-
 「//」が付いているアドオンは角の斜めでは直線になります。\\
 
 
-(4)
 
 \includegraphics[width = 75mm]{picture/20210214-road-3-4.png}
 
+(4)
 2車線道路をデコります。\\
 
-\newpage
-(5)
+
 
 \includegraphics[width = 75mm]{picture/20210214-road-3-5.png}
 
+(5)
 市電/軽便鉄道ツールを開きます。
 2車線側壁の何も付いていないアドオンを道路全体に引きます。
 
 
-(6)
 
 \includegraphics[width = 75mm]{picture/20210214-road-3-6.png}
 
+(6)
 角の部分を2車線側壁の「//」が付いているアドオンで上書きします。
 
 \end{multicols}
@@ -479,7 +473,7 @@
 \newpage
 
 
-\subsection{1車線から2車線へ}
+\subsubsection{1車線から2車線へ}
 \label{sub:1lane_to_2lane}
 
 \begin{multicols}{2}
@@ -494,48 +488,48 @@
 
 \begin{multicols}{2}
 
-  (1)
 
 \includegraphics[width = 75mm]{picture/20210214-road-4-1.png}
 
+(1)
 道路ツールを開きます。
 1車線 奥 幅広路肩の道路を6マスくらい引きます。\\
 
 
-(2)
 
 \includegraphics[width = 75mm]{picture/20210214-road-4-2.png}
 
+(2)
 車線幅を変更する1マス後のところに2車線道路を上書きします。\\
 
 
-(3)
 
 \includegraphics[width = 75mm]{picture/20210214-road-4-3.png}
 
+(3)
 市電/軽便鉄道ツールを開きます。
 車線幅を変更するマスに、「本線2車線 - 補助1車線 右側〇〇」アドオンを引きます。
 
 SISのオリジナルでは側壁が付いていないですが、側壁を付けてみました。\\
 
-\newpage
-(4)
+
 
 \includegraphics[width = 75mm]{picture/20210214-road-4-4.png}
 
+(4)
 車線幅を変更する1マス後のところに2車線の側壁アドオンを上書きします。\\
 
 
-(5-1)
 
 \includegraphics[width = 75mm]{picture/20210214-road-4-6.png}
 
+(5-1)
 車線幅を変更する1マス前から南に2車線側壁のアドオンを引きます。
 車線幅を変更するマスとはくっつけない場合はこうなります。\\
 
-(5-2)
 
 \includegraphics[width = 75mm]{picture/20210214-road-4-7.png}
+(5-2)
 
 つなげるとこうなります。
 
@@ -543,7 +537,7 @@ SISのオリジナルでは側壁が付いていないですが、側壁を付�
 
 \newpage
 
-\subsection{1車線から2車線へ2}
+\subsubsection{1車線から2車線へ2}
 \label{sub:1lane_to_2lane2}
 
 \includegraphics[width = 75mm]{picture/20210214-road-5-5.png}
@@ -552,40 +546,38 @@ SISのオリジナルでは側壁が付いていないですが、側壁を付�
 
 \begin{multicols}{2}
 
-  (1)
 
 \includegraphics[width = 75mm]{picture/20210214-road-5-1.png}
 
+(1)
 道路ツールを開きます。
 1車線 奥の道路を6マスくらい引きます。\\
 
-(2)
 
 \includegraphics[width = 75mm]{picture/20210214-road-5-2.png}
 
+(2)
 車線幅を変更する1マス後のところに2車線道路を上書きします。\\
 
-(3)
 
 \includegraphics[width = 75mm]{picture/20210214-road-5-3.png}
 
+(3)
 市電/軽便鉄道ツールを開きます。
 車線幅を変更するマスに、「1車線 奥」の「//」が付いている側壁アドオンを引きます。
 
 
 
-(4)
 
 \includegraphics[width = 75mm]{picture/20210214-road-5-4.png}
 
+(4)
 車線幅を変更する1マス後のところに2車線の側壁アドオンを上書きします。
 
-\newpage
-
-(5)
 
 \includegraphics[width = 75mm]{picture/20210214-road-5-5.png}
 
+(5)
 車線幅を変更するマスより前から南へ1車線の側壁アドオンを引きます。
 このとき、車線幅を変更するマスと接続しないように注意します。
 
@@ -594,13 +586,13 @@ SISのオリジナルでは側壁が付いていないですが、側壁を付�
 
 \newpage
 
-\section{参考資料}
+\subsection{参考資料}
 \begin{itemize}
   \item Project SIS (Ebi/Shirakami)
   \item csv2dat (Phystam)
 \end{itemize}
 
-\section{編集後記}
+\subsection{編集後記}
 
 扱いに慣れるための有効だと思われる練習方法として以下をあげます。
 \begin{itemize}
@@ -623,9 +615,9 @@ SISのオリジナルでは側壁が付いていないですが、側壁を付�
 
 \newpage
 
-\chapter{English version}
+\section{English version}
 
-\section{Introduction}
+\subsection{Introduction}
 
 The aim of this project is to add addons to Simutrans, an urban development and transportation simulation game, to recreate infrastructure with unprecedented realism, mainly roads.
 
