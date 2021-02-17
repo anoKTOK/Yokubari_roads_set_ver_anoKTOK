@@ -19,17 +19,20 @@
 　128standard版は128standard/paksetに置いています。（予定）
 
 　128extended版は[128extended/pakset](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset)に置いています。
+ makeobjは2019年6月に更新されたものです。このアドオン群は、pak128.britain-ex-nightly、pak128_Sweden_Exなど、Pakサイズが128であれば動作することを確認しています。
 
-　The pak files of pak128 standard is put in 128standard/pakset (Plan)
+　The pak files of pak128 standard is put in 128standard/pakset (Under planning)
 
 　The pak files of pak128 extended is put in [128extended/pakset](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset).
+ The makeobj to construct these addons is updated June 2019.
+ I confirmed that the addons work in arbitrary addons of pak128 (for example pak128.britain-ex-nightly, pak128_Sweden_Ex).
 
 ### ja.tab, en.tab
 　128standard版は128standard/pakset/textに置いています。（予定）
 
 　128extended版は[128extended/pakset/text](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset/text)に置いています。
 
-　The en.tab of pak128 standard is put in 128standard/pakset/text (Plan)
+　The en.tab of pak128 standard is put in 128standard/pakset/text (Under planning)
 
 　The en.tab of pak128 extended is put in [128extended/pakset/text](https://github.com/anoKTOK/Yokubari_roads_set_ver_anoKTOK/tree/main/128extended/pakset/text) .
 
