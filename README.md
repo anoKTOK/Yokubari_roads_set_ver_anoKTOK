@@ -61,7 +61,7 @@ Legal code：http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
       
 ・pak更新にて、前のデータが読み込めないということはないように配慮します。しかし、パックセットによっては、描画の変更があります。ご了承ください。
 
-  By update, the pictures mayBE change suddenly. Please keep this in mind.
+  By update, the pictures maybe change suddenly. Please keep this in mind.
 
 ### 参考資料 / Reference
 Project SIS (Ebi/Shirakami) クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス(Attribution-NonCommercial-ShareAlike 4.0 International)
