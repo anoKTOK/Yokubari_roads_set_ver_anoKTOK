@@ -5,7 +5,7 @@ for file in `find . -name '*.csv'`; do
 		echo "  extracting $file"
 done
 #cat ../pakset/config/simuconf_base.tab > ../pakset/config/simuconf.tab
-cat simuconf_liveries.tab >> ../pakset/config/simuconf.tab
+#cat simuconf_liveries.tab >> ../pakset/config/simuconf.tab
 
 for file in `find . -name '*.tab'`; do
 		if [ $file = "./simuconf_liveries.tab" ]
