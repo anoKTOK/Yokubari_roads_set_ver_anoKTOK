@@ -64,7 +64,7 @@ Legal code：http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
   By update, the pictures may change suddenly. Please keep this in mind.
 
 ### Reference
-Project SIS (Ebi/Shirakami)
+Project SIS (Ebi/Shirakami) クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際 ライセンス(Attribution-NonCommercial-ShareAlike 4.0 International)
 
 csv2dat (Phystam)
 
